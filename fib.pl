@@ -10,5 +10,6 @@ fibonacci(X,Y,N):-
 	write(X1),write(" "),
 	N1 is N-1,
 	fibonacci(Y,X1,N1)
-	).
+	);
+	(N=<2 -> !).
 	
